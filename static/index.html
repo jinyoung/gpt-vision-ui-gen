@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor</title>
+    <script>
+        async function processImage() {
+            const imageFile = document.getElementById("imageInput").files[0];
+            const reader = new FileReader();
+
+            reader.onloadend = async () => {
+                const base64Image = reader.result.replace(/^data:image\/(png|jpg|jpeg);base64,/, '');
+                const response = await fetch('/process-image/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ image_base64: base64Image }),
+                });
+
+                const result = await response.json();
+                document.getElementById("result").textContent = result.message;
+            };
+
+            if (imageFile) {
+                reader.readAsDataURL(imageFile);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Image Processor</h1>
+    <input type="file" id="imageInput" accept="image/png, image/jpeg">
+    <button onclick="processImage()">Process Image</button>
+    <div id="result"></div>
+</body>
+</html>

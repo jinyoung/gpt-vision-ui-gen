@@ -1,0 +1,98 @@
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>세금 계산서</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .grid-item {
+            border: 1px solid #FF0000;
+            padding: 4px;
+        }
+        .bg-yellow-200 {
+            background-color: #FFFFCC;
+        }
+        .text-red-600 {
+            color: #FF0000;
+        }
+        .text-xs {
+            font-size: 0.75rem; /* 12px */
+        }
+        .text-sm {
+            font-size: 0.875rem; /* 14px */
+        }
+        .text-base {
+            font-size: 1rem; /* 16px */
+        }
+        .font-bold {
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body class="bg-yellow-200">
+    <div class="grid grid-cols-6 gap-0">
+        <!-- Header -->
+        <div class="col-span-6 grid-item text-red-600 font-bold text-base text-center">[별지 제11호 서식]</div>
+        <div class="col-span-6 grid-item text-red-600 font-bold text-xl text-center">세금 계산서 (공급자용)</div>
+
+        <!-- Row 1 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-sm">등록번호</div>
+        <div class="col-span-2 grid-item text-red-600 text-sm">632-08-00201</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-sm">등록번호</div>
+        <div class="col-span-2 grid-item text-red-600 text-sm">000-00-00000</div>
+
+        <!-- Row 2 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">상 호 (법인명)</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">한강시스템공사</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">상 호 (법인명)</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">한강시스템공사</div>
+
+        <!-- Row 3 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">사업장 소재지</div>
+        <div class="col-span-5 grid-item text-red-600 text-xs">서울특별시 영등포구 여의도동 32, 301호 신한 빌딩(당산동3가)</div>
+
+        <!-- Row 4 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">성 명</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">김민호, 강한길 외 1명/사업체 총인원3인사업자</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">성 명</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">김민호, 강한길 외 1명/사업체 총인원3인사업자</div>
+
+        <!-- Row 5 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">업 태</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">도매업</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">업 태</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">도매업</div>
+
+        <!-- Row 6 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">종 목</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">컴퓨터 및 주변기기 도소매</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">종 목</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">컴퓨터 및 주변기기 도소매</div>
+
+        <!-- Row 7 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">작 성 일</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">2020년 7월 24일</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">작 성 일</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">2020년 7월 24일</div>
+
+        <!-- Row 8 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">공 급 가 액</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">70,000</div>
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">세 액</div>
+        <div class="col-span-2 grid-item text-red-600 text-xs">7,000</div>
+
+        <!-- Row 9 -->
+        <div class="col-span-1 grid-item text-red-600 font-bold text-xs">합 계 금 액</div>
+        <div class="col-span-5 grid-item text-red-600 text-xs">77,000</div>
+
+        <!-- Row 10 -->
+        <div class="col-span-6 grid-item text-red-600 text-xs">22226-28131호 '96.2.27 개정</div>
+
+        <!-- Footer -->
+        <div class="col-span-6 grid-item text-red-600 text-xs text-center">182mm×128mm 인쇄용지</div>
+    </div>
+</body>
+</html>

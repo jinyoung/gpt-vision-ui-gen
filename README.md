@@ -1,1 +1,5 @@
-# gpt-vision-ui-gen
+```
+pipenv install
+pipenv shell
+python gptvision.py
+```
